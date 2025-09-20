@@ -1,3 +1,7 @@
+
+def multiply_numbers(a, b):
+    """Returns the product of a and b."""
+    return a * b
 TAX_RATE = 0.0675  # 6.75%
 
 def get_sales_tax_amount(meal_amount: float) -> float:
