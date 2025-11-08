@@ -1,4 +1,13 @@
-from src.homework.b_in_proc_out.output import get_sales_tax_amount, get_tip_amount, TAX_RATE
+import sys
+import os
+
+try:
+    from .output import get_sales_tax_amount, get_tip_amount, TAX_RATE
+except Exception:
+    # Allow running this file directly (as a script) by adding the current package folder
+    # to sys.path and importing the sibling module.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from output import get_sales_tax_amount, get_tip_amount, TAX_RATE
 
 def main():
     try:
