@@ -12,10 +12,10 @@ if src_path not in sys.path:
     sys.path.insert(0, src_path)
 
 try:
-    from tests.homework.g_lists_and_tuples import tests_lists_and_tuples
+    from tests.homework.i_dictionaries_sets import tests_dictionaries_and_sets
 except Exception as e:
-    print("Failed to import test module 'tests.homework.g_lists_and_tuples.tests_lists_and_tuples':", e)
+    print("Failed to import test module 'tests.homework.i_dictionaries_sets.tests_dictionaries_and_sets':", e)
     sys.exit(1)
 
-suite = unittest.TestLoader().loadTestsFromModule(tests_lists_and_tuples)
+suite = unittest.TestLoader().loadTestsFromModule(tests_dictionaries_and_sets)
 unittest.TextTestRunner(verbosity=2).run(suite)
