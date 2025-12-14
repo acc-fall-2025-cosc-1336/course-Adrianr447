@@ -21,7 +21,7 @@ def get_stock_list():
     ]
 
 
-def display_stock_list(stocks):
+def stock_list(stocks):
     print("\nStock Report")
     print(f"{'Company':<15} {'Symbol':<10}")
     for s in stocks:
@@ -37,7 +37,7 @@ def main():
         option = input("Select option: ").strip()
 
         if option == "1":
-            display_stock_list(stocks)
+            stock_list(stocks)
         elif option == "2":
             break
         else:
