@@ -18,6 +18,11 @@ def get_most_likely_ancestor_consensus(dna_string1, dna_string2):
     return tuple(positions)
 
 
+    # Alias for the misspelled version in the prompt's test section
+    def get_most_likely_ancestor_consenus(dna_string1, dna_string2):
+        return get_most_likely_ancestor_consensus(dna_string1, dna_string2)
+
+
 def main():
     while True:
         dna1 = input("Enter DNA string (9-16 chars): ").strip()
