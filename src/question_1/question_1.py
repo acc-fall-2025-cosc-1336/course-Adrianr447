@@ -12,11 +12,6 @@ def create_mulitiplication_table():
     return table
 
 
-# Alias in case the grader calls the correctly-spelled name
-def create_multiplication_table():
-    return create_mulitiplication_table()
-
-
 def display_multiplication_table(table):
     """
     Displays the table as rows of space-separated values.
